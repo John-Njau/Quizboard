@@ -7,7 +7,7 @@
 .container1>*{
     display: grid;
     grid-template-columns: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto 10px;
 }
 
@@ -23,6 +23,7 @@
     margin: auto auto;
     text-transform: uppercase;
     margin: auto 10px;
+    color: #fff;
 }
 
 #name{
@@ -137,20 +138,21 @@ hr{
     color: #0000;
 }
 
-.submit>button{
+.submit>#submit{
     background: #0e1125;
     width: 30vw;
     height: 10vh;
     color:#9cac56 ;
     margin: auto auto;
+    border-radius: 7%;
 }
 
 .footer>*{
     display: flex;
     justify-content: space-between;
-    margin: auto 10px;
+    /* margin: auto 10px; */
     /* width: 4vh; */
-    color: #706d69;
+    color: #000;
     text-transform: uppercase;
     font-weight: 500;
     background: #aaa;
