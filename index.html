@@ -24,7 +24,7 @@
                 </ul>
             </div>
         </div>
-        <div id="student--id">Student ID. <input placeholder="29690"> </div>
+        <div id="student--id">Student ID. <inpu> </div>
         <div id="computer--club--name"> Computer Club JS MCQ 101</div>
         <div id="instructions">
             <h3>MCQ instructions</h3>
@@ -38,84 +38,86 @@
     <div class="container--questions">
             <h1>QUESTIONS</h1>
             <form name="first" id="quiz">
-                <p>1. Why is Javascript popular in FrontEnd Development?</p>
-                <p><input type="radio" name="answer--1" value="A"> A: Makes styling easier</p>
-                <p><input type="radio" name="answer--2" value="B"> B: Allows for the scalability needed in cloud computing</p>
-                <p><input type="radio" name="answer--3" value="C"> C: Makes styling easier</p>
-                <p><input type="radio" name="answer--4" value="D"> D: Makes styling easier</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="second" id="quiz">
+                <div>
+                    <p>1. Why is Javascript popular in FrontEnd Development?</p>
+                    <p><input type="radio" name="question1" value="A"> A: Makes styling easier</p>
+                    <p><input type="radio" name="question1" value="B"> B: Allows for the scalability needed in cloud computing</p>
+                    <p><input type="radio" name="question1" value="C"> C: Makes storing variables easy</p>
+                    <p><input type="radio" name="question1" value="D"> D: Works same as PHP</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
                 <!-- ans is A -->
-                <p>2. What are variables used for in JavaScript Programs?</p>
-                <p><input type="radio" name="" value="A">A.  Storing numbers, dates, or other values</p>
-                <p> <input type="radio" name="" value="B">B.  Varying randomly </p>
-                <p><input type="radio" name="" value="C">C.  Causing high-school algebra flashbacks</p>
-                <p><input type="radio" name="" value="D">D.  None of the above</p>
-                <hr size="8" width="90%" color="black"> 
+                    <p>2. What are variables used for in JavaScript Programs?</p>
+                    <p><input type="radio" name="question2" value="A">A.  Storing numbers, dates, or other values</p>
+                    <p> <input type="radio" name="question2" value="B">B.  Varying randomly </p>
+                    <p><input type="radio" name="question2" value="C">C.  Causing high-school algebra flashbacks</p>
+                    <p><input type="radio" name="question2" value="D">D.  None of the above</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is c -->
+                    <p>3. Which of the following are capabilities of functions in JavaScript?</p>
+                    <p><input type="radio" name="question3" value="A">A.  Return a value</p>
+                    <p> <input type="radio" name="question3" value="B">B.  Accept parameters and Return a value </p>
+                    <p><input type="radio" name="question3" value="C">C.  Accept parameters</p>
+                    <p><input type="radio" name="question3" value="D">D.  Sending a form's contents by email</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is c -->
+                    <p>4. Which is the correct way to write a JavaScript array? </p>
+                    <p><input type="radio" name="question4" value="A">A.  var txt = new Array(1:"tim",2:"kim",3:"jim")</p>
+                    <p> <input type="radio" name="question4" value="B">B.  var txt = new Array:1=("tim")2=("kim")3=("jim") </p>
+                    <p><input type="radio" name="question4" value="C">C.  var txt = new Array("tim","kim","jim")</p>
+                    <p><input type="radio" name="question4" value="D">D. var txt = new Array="tim","kim","jim"</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is B -->
+                    <p>5.  If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?</p>
+                    <p><input type="radio" name="question5" value="A">A. "New Text"?</p>
+                    <p> <input type="radio" name="question5" value="B">B. para1.value="New Text"; </p>
+                    <p><input type="radio" name="question5" value="C">C. para1.firstChild.nodeValue= "New Text";</p>
+                    <p><input type="radio" name="question5" value="D">D. para1.nodeValue="New Text";</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is D -->
+                    <p>6. JavaScript entities start with _______ and end with _________.</p>
+                    <p><input type="radio" name="question6" value="A">A. Semicolon, colon</p>
+                    <p> <input type="radio" name="question6" value="B">B. Semicolon, Ampersand </p>
+                    <p><input type="radio" name="question6" value="C">C. Ampersand, colon</p>
+                    <p><input type="radio" name="question6" value="D">D. Ampersand, semicolon</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is D -->
+                    <p>7.Which of the following best describes JavaScript?</p>
+                    <p><input type="radio" name="question7" value="A">A. a low-level programming language.</p>
+                    <p> <input type="radio" name="question7" value="B">B. a scripting language precompiled in the browser. </p>
+                    <p><input type="radio" name="question7" value="C">C.  a compiled scripting language.</p>
+                    <p><input type="radio" name="question7" value="D">D. an object-oriented scripting language</p>
+                    <hr size="8" width="90%" color="black"> 
+                </div>
+                <div>
+                    <!-- ans is C -->
+                    <p>8. Which of the following is the structure of an if statement?</p>
+                    <p><input type="radio" name="question8" value="A">A. if (conditional expression is true) thenexecute this codeend if</p>
+                    <p> <input type="radio" name="question8" value="B">B. if (conditional expression is true)execute this codeend if </p>
+                    <p><input type="radio" name="question8" value="C">C. if (conditional expression is true)   {then execute this code>->}</p>
+                    <p><input type="radio" name="question8" value="D">D. if (conditional expression is true) then {execute this code}</p>
+                    <hr size="8" width="90%" color="green"> 
+                </div>
+                <div class="submit">
+                    <input type="button" value="SUBMIT" id="submit" onclick="submitButton()">
+                </div>
             </form>
-                <!-- ans is c -->
-            <form name="third" id="quiz">
-                <p>3. Which of the following are capabilities of functions in JavaScript?</p>
-                <p><input type="radio" name="" value="A">A.  Return a value</p>
-                <p> <input type="radio" name="" value="B">B.  Accept parameters and Return a value </p>
-                <p><input type="radio" name="" value="C">C.  Accept parameters</p>
-                <p><input type="radio" name="" value="D">D.  Sending a form's contents by email</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="fourth" id="quiz">
-                <!-- ans is c -->
-                <p>4. Which is the correct way to write a JavaScript array? </p>
-                <p><input type="radio" name="" value="A">A.  var txt = new Array(1:"tim",2:"kim",3:"jim")</p>
-                <p> <input type="radio" name="" value="B">B.  var txt = new Array:1=("tim")2=("kim")3=("jim") </p>
-                <p><input type="radio" name="" value="C">C.  var txt = new Array("tim","kim","jim")</p>
-                <p><input type="radio" name="" value="D">D. var txt = new Array="tim","kim","jim"</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="fifth" id="quiz">
-                <!-- ans is B -->
-                <p>5.  If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?</p>
-                <p><input type="radio" name="" value="A">A. "New Text"?</p>
-                <p> <input type="radio" name="" value="B">B. para1.value="New Text"; </p>
-                <p><input type="radio" name="" value="C">C. para1.firstChild.nodeValue= "New Text";</p>
-                <p><input type="radio" name="" value="D">D. para1.nodeValue="New Text";</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="sixth" id="quiz">
-                <!-- ans is D -->
-                <p>6. JavaScript entities start with _______ and end with _________.</p>
-                <p><input type="radio" name="" value="A">A. Semicolon, colon</p>
-                <p> <input type="radio" name="" value="B">B. Semicolon, Ampersand </p>
-                <p><input type="radio" name="" value="C">C. Ampersand, colon</p>
-                <p><input type="radio" name="" value="D">D. Ampersand, semicolon</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="seventh" id="quiz">
-                <!-- ans is D -->
-                <p>7.Which of the following best describes JavaScript?</p>
-                <p><input type="radio" name="" value="A">A. a low-level programming language.</p>
-                <p> <input type="radio" name="" value="B">B. a scripting language precompiled in the browser. </p>
-                <p><input type="radio" name="" value="C">C.  a compiled scripting language.</p>
-                <p><input type="radio" name="" value="D">D. an object-oriented scripting language</p>
-                <hr size="8" width="90%" color="black"> 
-            </form>
-            <form name="eigth" id="quiz">
-                <!-- ans is C -->
-                <p>8. Which of the following is the structure of an if statement?</p>
-                <p><input type="radio" name="" value="A">A. if (conditional expression is true) thenexecute this codeend if</p>
-                <p> <input type="radio" name="" value="B">B. if (conditional expression is true)execute this codeend if </p>
-                <p><input type="radio" name="" value="C">C. if (conditional expression is true)   {then execute this code>->}</p>
-                <p><input type="radio" name="" value="D">D. if (conditional expression is true) then {execute this code}</p>
-                <hr size="8" width="90%" color="green"> 
-            </form>
-            <div class="submit">
-                <button type="button" value="SUBMIT" onclick="submit">SUBMIT</button>
-            </div>
     </div>
     
     <footer class="footer">
         <div id="copy">copyyright. 2022</copy>
         <div id="dsgn">Designed by John Njau</div>
     </footer>
-
+    <script src="JS/script.js"></script>
 </body>
