@@ -1,3 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+.container1>*{
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid black;
+    margin: auto 10px;
+}
+
+.container1{
+    background-color: #aaa;
+}
+
+
 .nav--container{
     display: flex;
     justify-content: space-between;
@@ -13,11 +31,6 @@
     font-size: 3.5vw;
 }
 
-/* #image>img{ */
-    /* height:0px; */
-    /* margin-top: 0px; */
-/* } */
-
 ul{
     justify-content: right;
     display: flex;
@@ -29,4 +42,69 @@ ul{
     gap: 1em;
     font-weight: 500;
     /* border: 1px solid black; */
+}
+
+#student--id{ 
+    margin: auto auto;
+    padding: 95px;
+    /* text-align: center; */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top:5%;
+    margin: auto 10px;
+ }
+
+input{
+    height: 4vh;
+    width: 6vh;
+    background: #fff;
+    /* align-self: center; */
+}
+
+/* #student--id, input{ */
+    /* margin: auto auto; */
+/* } */
+
+#computer--club--name{
+    text-align: center;
+    /* margin: auto auto; */
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #ddd;
+    /* width: 50%; */
+    /* height: 4vh; */
+    /* color: #ac9453; */
+    font-size: 4vw;
+    font-size: 4vh;
+    /* padding-top: 5%; */
+    /* padding-bottom: 5%; */
+}
+
+#instructions{
+    /* text-align: center; */
+    padding-top: 10% ;
+}
+
+.container1>#instructions{
+    text-align: center;
+}
+
+#instructions>p{
+    font-size: 4vw;
+    font-size: 4vh;
+    color: #5964ae;
+    text-align: left center;
+}
+
+#instructions>h3{
+    color: #ac9453;
+    text-transform: uppercase;
+    font-size: 5vw ;
+    font-size: 5vh;
+}
+
+span{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #0e1125;
 }
