@@ -108,3 +108,26 @@ span{
     text-transform: uppercase;
     color: #0e1125;
 }
+
+.container--questions{
+    padding: 15%;
+    background: #4a5c71;
+    color: #fff;
+}
+
+.container--questions>h1{
+    text-align: center;
+}
+
+.container--questions>p{
+    font-size: 6vw;
+}
+ 
+.container--questions>*{
+    /* text-align */
+}
+
+form{
+    gap: 2.5em;
+    font-size: 4vw
+}
