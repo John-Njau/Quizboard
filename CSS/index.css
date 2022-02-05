@@ -144,3 +144,14 @@ hr{
     color:#9cac56 ;
     margin: auto auto;
 }
+
+.footer>*{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10px;
+    /* width: 4vh; */
+    color: #706d69;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #aaa;
+}
