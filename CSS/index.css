@@ -136,3 +136,11 @@ span{
 hr{
     color: #0000;
 }
+
+.submit>button{
+    background: #0e1125;
+    width: 30vw;
+    height: 10vh;
+    color:#9cac56 ;
+    margin: auto auto;
+}
