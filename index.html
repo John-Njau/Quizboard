@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiChoice QUIZBOARD</title>
+    <link rel="shortcut icon" href="./images/ict-club-dsgn.png" type="image/x-icon">
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,21 +25,22 @@
                 </ul>
             </div>
         </div>
-        <div id="student--id">Student ID. <inpu> </div>
-        <div id="computer--club--name"> Computer Club JS MCQ 101</div>
-        <div id="instructions">
-            <h3>MCQ instructions</h3>
-            <p>1. Answer <span>all</span> Questions.</p>
-            <p>2. Choose <span>only</span> one Answer for the Questions. </p>
-            <p>3. This quiz has <span>time</span> no limit.Take your time.</p>
-            <p>4. Plagiarism is punishable by <span>Suspension</span> from the club </p>
-            <p>5. Make sure you <span>Submit</span> when you are done.</p>
-        </div> 
-    </div>
+        <div id="student--id">Student ID. <inpu> </div>       
+            <div id="computer--club--name"> Computer Club JS MCQ 101</div>
+            <div id="instructions">
+                <h3>MCQ instructions</h3>
+                <p>1. Answer <span>all</span> Questions.</p>
+                <p>2. Choose <span>only</span> one Answer for the Questions. </p>
+                <p>3. This quiz has <span>time</span> no limit.Take your time.</p>
+                <p>4. Plagiarism is punishable by <span>Suspension</span> from the club </p>
+                <p>5. Make sure you <span>Submit</span> when you are done.</p>
+            </div> 
+   
     <div class="container--questions">
-            <h1>QUESTIONS</h1>
-            <form name="first" id="quiz">
+            <form name="first" id="questions">
+                <h1>QUESTIONS</h1>
                 <div>
+                    <!-- ans is B -->
                     <p>1. Why is Javascript popular in FrontEnd Development?</p>
                     <p><input type="radio" name="question1" value="A"> A: Makes styling easier</p>
                     <p><input type="radio" name="question1" value="B"> B: Allows for the scalability needed in cloud computing</p>
@@ -103,7 +105,7 @@
                 <div>
                     <!-- ans is C -->
                     <p>8. Which of the following is the structure of an if statement?</p>
-                    <p><input type="radio" name="question8" value="A">A. if (conditional expression is true) thenexecute this codeend if</p>
+                    <p><input type="radio" name="question8" value="A" required="true">A. if (conditional expression is true) thenexecute this codeend if</p>
                     <p> <input type="radio" name="question8" value="B">B. if (conditional expression is true)execute this codeend if </p>
                     <p><input type="radio" name="question8" value="C">C. if (conditional expression is true)   {then execute this code>->}</p>
                     <p><input type="radio" name="question8" value="D">D. if (conditional expression is true) then {execute this code}</p>
@@ -113,6 +115,7 @@
                     <input type="button" value="SUBMIT" id="submit" onclick="submitButton()">
                 </div>
             </form>
+            <div id="text"> <img src="./images/results-removebg-preview.png" alt=""> </div>
     </div>
     
     <footer class="footer">
