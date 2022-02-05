@@ -53,6 +53,7 @@ ul{
     text-transform: uppercase;
     padding-top:5%;
     margin: auto 10px;
+    color: #aaa;
  }
 
 input{
@@ -83,7 +84,7 @@ input{
 
 #instructions{
     /* text-align: center; */
-    padding-top: 10% ;
+    padding-top: 7% ;
 }
 
 .container1>#instructions{
@@ -91,8 +92,8 @@ input{
 }
 
 #instructions>p{
-    font-size: 4vw;
-    font-size: 4vh;
+    font-size: 3.5vw;
+    font-size: 3.5vh;
     color: #5964ae;
     text-align: left center;
     font-family: 'Fira Sans', sans-serif;
