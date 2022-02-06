@@ -4,14 +4,14 @@ confirm("Click 'OK' if you are ready to take the test.")
 // This function stores the answer of the test questions
 function submitButton() {
     var score = 0;
-    const correctAnswer1 = document.first.question1.value;  //.required= true
-    const correctAnswer2 = document.first.question2.value;
-    const correctAnswer3 = document.first.question3.value;
-    const correctAnswer4 = document.first.question4.value;
-    const correctAnswer5 = document.first.question5.value;
-    const correctAnswer6 = document.first.question6.value;
-    const correctAnswer7 = document.first.question7.value;
-    const correctAnswer8 = document.first.question8.value;
+    const correctAnswer1 = document.questionsList.question1.value;  //.required= true
+    const correctAnswer2 = document.questionsList.question2.value;
+    const correctAnswer3 = document.questionsList.question3.value;
+    const correctAnswer4 = document.questionsList.question4.value;
+    const correctAnswer5 = document.questionsList.question5.value;
+    const correctAnswer6 = document.questionsList.question6.value;
+    const correctAnswer7 = document.questionsList.question7.value;
+    const correctAnswer8 = document.questionsList.question8.value;
     // var questions= getElementById("questions");
     var result = document.getElementById("text");
     if (correctAnswer1 == "B") (score++);
