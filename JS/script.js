@@ -1,4 +1,5 @@
-// confirm("Are you ready to take the test?")
+confirm("Click 'OK' if you are ready to take the test.")
+
 
 // This function stores the answer of the test questions
 function submitButton() {
@@ -29,7 +30,7 @@ function submitButton() {
     result.style.color = "#fff";
     result.style.fontSize = "30px";
     result.style.fontWeight = "700";
-    result.style.border = "1px solid black";
+    result.style.border = "none";
     // document.getElementById("result").style.backgroundImage ="url('/home/moringa/Documents/Moringa-projects/Quizboard-project/images/results-removebg-preview.png')";
     // result.style.innerHTML = "<img src='/home/moringa/Documents/Moringa-projects/Quizboard-project/images/results-removebg-preview.png'>";
 
@@ -47,11 +48,11 @@ function submitButton() {
 
     var scorePercent = (Math.floor(score * 100 / 8));
     if (scorePercent >= 80) {
-        result.textContent = score + " answers correct out of 8.Congratulations! You have scored " + scorePercent + "%.  EXCELLENT!!!";
+        result.textContent = score + "/8. Congratulations! You have scored " + scorePercent + "%.  EXCELLENT!!!";
     } else if (scorePercent >= 50) {
-        result.textContent = "Congratulations, You have scored " + scorePercent + "% . FAIR!";
+        result.textContent = score + "/8. Congratulations, You have scored " + scorePercent + "% . FAIR!";
     } else {
-        result.textContent = " Score " + scorePercent + "%.  FAILED. RETAKE THE TEST!";
+        result.textContent = score + "/8. Your Score " + scorePercent + "%.  FAILED. RETAKE THE TEST!";
         // result.style.color ="red";
     }
     $('#text').prepend('<img id="img" src="https://i.postimg.cc/rw7L81dP/results-removebg-preview.png" width="50%"/>'); 
