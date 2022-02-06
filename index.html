@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiChoice QUIZBOARD</title>
-    <link rel="shortcut icon" href="./images/ict-club-dsgn.png" type="image/x-icon">
     <link rel="stylesheet" href="/CSS/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container1">
+    
         <div class="nav--container">
             <div id="name"> CHESTER SCHOOL</div>
-            <div id="image"> <img src="./images/ict-club-dsgn.png" alt="Computer Club logo" height="170px"> </div>
+            <div id="image"> <img src="./images/ict-club-dsgn.png" alt="Computer Club logo" height="170%"> </div>
             <div id="nav">
                 <ul>
                     <li>Home</li>
@@ -25,39 +25,51 @@
                 </ul>
             </div>
         </div>
-        <div id="student--id">Student ID. <inpu> </div>       
-            <div id="computer--club--name"> Computer Club JS MCQ 101</div>
-            <div id="instructions">
+        <div class="container1"> 
+            <!-- <div id="student--id">Student ID. <inpu> </div>        -->
+            <div id="computer--club--name"> Computer Club JS QUIZ</div>
+        </div>
+                <!-- <div id="instructions">
                 <h3>MCQ instructions</h3>
                 <p>1. Answer <span>all</span> Questions.</p>
                 <p>2. Choose <span>only</span> one Answer for the Questions. </p>
                 <p>3. This quiz has <span>time</span> no limit.Take your time.</p>
                 <p>4. Plagiarism is punishable by <span>Suspension</span> from the club </p>
                 <p>5. Make sure you <span>Submit</span> when you are done.</p>
-            </div> 
+            </div>  -->
    
     <div class="container--questions">
             <form name="first" id="questions">
                 <h1>QUESTIONS</h1>
-                <div>
+                <div id="qn1">
                     <!-- ans is B -->
                     <p>1. Why is Javascript popular in FrontEnd Development?</p>
-                    <p><input type="radio" name="question1" value="A"> A: Makes styling easier</p>
+                    <p><input type="radio" name="question1" value="A" required="true"> A: Makes styling easier</p>
                     <p><input type="radio" name="question1" value="B"> B: Allows for the scalability needed in cloud computing</p>
                     <p><input type="radio" name="question1" value="C"> C: Makes storing variables easy</p>
                     <p><input type="radio" name="question1" value="D"> D: Works same as PHP</p>
+                    <div class="previous-next">
+                        <button id="previous">Previous</button>
+                        <span id="curidx"></span>
+                        <button id="next">Next</button>
+                    </div>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn2">
                 <!-- ans is A -->
                     <p>2. What are variables used for in JavaScript Programs?</p>
-                    <p><input type="radio" name="question2" value="A">A.  Storing numbers, dates, or other values</p>
+                    <p><input type="radio" name="question2" value="A" required="true">A.  Storing numbers, dates, or other values</p>
                     <p> <input type="radio" name="question2" value="B">B.  Varying randomly </p>
                     <p><input type="radio" name="question2" value="C">C.  Causing high-school algebra flashbacks</p>
                     <p><input type="radio" name="question2" value="D">D.  None of the above</p>
+                    <div class="previous-next">
+                        <button id="previous">Previous</button>
+                        <span id="curidx"></span>
+                        <button id="next">Next</button>
+                    </div>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn3">
                     <!-- ans is c -->
                     <p>3. Which of the following are capabilities of functions in JavaScript?</p>
                     <p><input type="radio" name="question3" value="A">A.  Return a value</p>
@@ -66,7 +78,7 @@
                     <p><input type="radio" name="question3" value="D">D.  Sending a form's contents by email</p>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn4">
                     <!-- ans is c -->
                     <p>4. Which is the correct way to write a JavaScript array? </p>
                     <p><input type="radio" name="question4" value="A">A.  var txt = new Array(1:"tim",2:"kim",3:"jim")</p>
@@ -75,7 +87,7 @@
                     <p><input type="radio" name="question4" value="D">D. var txt = new Array="tim","kim","jim"</p>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn5">
                     <!-- ans is B -->
                     <p>5.  If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?</p>
                     <p><input type="radio" name="question5" value="A">A. "New Text"?</p>
@@ -84,7 +96,7 @@
                     <p><input type="radio" name="question5" value="D">D. para1.nodeValue="New Text";</p>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn6">
                     <!-- ans is D -->
                     <p>6. JavaScript entities start with _______ and end with _________.</p>
                     <p><input type="radio" name="question6" value="A">A. Semicolon, colon</p>
@@ -93,7 +105,7 @@
                     <p><input type="radio" name="question6" value="D">D. Ampersand, semicolon</p>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn7">
                     <!-- ans is D -->
                     <p>7.Which of the following best describes JavaScript?</p>
                     <p><input type="radio" name="question7" value="A">A. a low-level programming language.</p>
@@ -102,18 +114,25 @@
                     <p><input type="radio" name="question7" value="D">D. an object-oriented scripting language</p>
                     <hr size="8" width="90%" color="black"> 
                 </div>
-                <div>
+                <div id="qn8">
                     <!-- ans is C -->
                     <p>8. Which of the following is the structure of an if statement?</p>
                     <p><input type="radio" name="question8" value="A" required="true">A. if (conditional expression is true) thenexecute this codeend if</p>
                     <p> <input type="radio" name="question8" value="B">B. if (conditional expression is true)execute this codeend if </p>
                     <p><input type="radio" name="question8" value="C">C. if (conditional expression is true)   {then execute this code>->}</p>
                     <p><input type="radio" name="question8" value="D">D. if (conditional expression is true) then {execute this code}</p>
+                    <div class="previous-next">
+                        <button id="previous" onclick="previous()">Previous</button>
+                        <span id="curidx"></span>
+                        <button id="next" onclick="next()">Next</button>
+                    </div>
                     <hr size="8" width="90%" color="green"> 
+                    
                 </div>
                 <div class="submit">
                     <input type="button" value="SUBMIT" id="submit" onclick="submitButton()">
                 </div>
+               
             </form>
             <div id="text"></div>
     </div>
