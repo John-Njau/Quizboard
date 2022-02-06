@@ -51,6 +51,12 @@ At the time of deployment, the author did not notice any bugs. In case you notic
 
 - CSS - Used to style the pages incuding the left aside navigation bar
 
+- JQuery - Used to handle events.
+
+- Javascript - Used to add Interactivity.
+
+- Bootstrap - Used for styling.
+
 ## Support and Contact details
 
 If you encounter any issues running this application, you are encouraged to contact John Njau via email @johnnjaunjoroge@gmail.com
